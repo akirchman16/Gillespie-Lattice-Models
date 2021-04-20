@@ -8,8 +8,8 @@ close all;
 % benchmark Scatchard plot and equation provided by McGhee and von Hippel
 % (1974).
 
-N = 1000;    %length of DNA lattice
-n = 1;  %length of each protein
+N = 8660;    %length of DNA lattice
+n = 3;  %length of each protein
 k_on = 1;   %kinetic rate constant for binding
 k_off = 1;  %kinetic rate constant for unbinding
 w = 2;      %cooperativity parameter
