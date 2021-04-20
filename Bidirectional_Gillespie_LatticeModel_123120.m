@@ -1,5 +1,5 @@
 clearvars;
-close all;
+% close all;
 
 % This code will model reactions between free proteins and
 % a one-dimensional DNA lattice. Dynamical Monte Carlo method (Gillespie
@@ -9,7 +9,7 @@ close all;
 
 N = 8660;    %length of DNA lattice
 n = 3;  %length of each protein
-k_on = 1;   %kinetic rate constant for binding (units: 1/(nt*s)??? )
+k_on = 10;   %kinetic rate constant for binding (units: 1/(nt*s)??? )
 k_off = 1;  %kinetic rate constant for unbinding (units: 1/s??? )
 L = 2;    %concentration of free proteins (units: Molarity???)
 % w = 1;    %cooperativity constant
