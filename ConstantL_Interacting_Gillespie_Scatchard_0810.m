@@ -8,13 +8,13 @@ close all;
 % benchmark Scatchard plot and equation provided by McGhee and von Hippel
 % (1974).
 
-N = 1000;    %length of DNA lattice
-n = 5;  %length of each protein
-k_on = 0.1;   %kinetic rate constant for binding
+N = 8660;    %length of DNA lattice
+n = 3;  %length of each protein
+k_on = 1;   %kinetic rate constant for binding
 k_off = 1;  %kinetic rate constant for unbinding
-w = 0.1;      %cooperativity parameter
+w = 1;      %cooperativity parameter
 
-ProteinConc = [0.1:0.1:10];    %range of free protein concentrations used to form Scatchard plot
+ProteinConc = [0.1:0.1:2];    %range of free protein concentrations used to form Scatchard plot
 minIterations = 1.5*N;
 
 K = k_on/k_off; %equilibrium constant
@@ -22,6 +22,7 @@ K = k_on/k_off; %equilibrium constant
 Loops = 1;
 
 L = zeros(1,length(ProteinConc));   %memory allocation
+L_A = zeros(1,length(ProteinConc));
 v = zeros(1,length(ProteinConc));
 ScatchY = zeros(1,length(ProteinConc));
 BindingFrac = zeros(1,length(ProteinConc));
